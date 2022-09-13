@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Products from './pages/Products'
 import ProductDetails from './pages/ProductDetails'
+import SeatPick from './pages/SeatPick'
 
 function App() {
   return (
@@ -13,14 +14,18 @@ function App() {
         <nav>
           <h1>Beyond Bizarre Movies</h1>
           <Link to="/">Home</Link>
-          <Link to="/about">Movies</Link>
-          <Link to="/products">Snacks and Drinks</Link>
+          <Link to="/products">Movies</Link>
+          <Link to="/about">Contact</Link>
+        
+         
+          
         </nav>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>}/>
           <Route path="/products/:id"  element={<ProductDetails/>} />
           <Route path="/products" element={<Products/>}/>
+          <Route path="/seatpick" element={<SeatPick/>}/>
         </Routes>
       </BrowserRouter>
     </div>

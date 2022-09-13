@@ -36,3 +36,24 @@ nav h1 {
   display: flex;
   gap: 20px;
 }
+
+.but{
+  border-radius: 5%;
+  display: flex;
+
+  margin-top: 5%;
+  
+  margin: auto;
+  margin-top: 5%;
+
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+
+}
+
+.but:hover{
+  transform: scale(1.1);
+}
